@@ -22,8 +22,8 @@ $0.0511 for the 3 prototype pages and $0.5407 for the 35 others, $0.5918 in all)
 
 Pages were then proofread against their page images when they held handwriting (the worked solutions in the quiz
 answers), figure labels copied into the text, answer options shown as images, figures that could not be placed, or
-the problems' fixed glyphs (below). `book.json` counts the pages by how they were read, and each page's front
-matter says how it was read.
+the problems' fixed glyphs (below); so were two pages where the second reader (below) found a drop. `book.json`
+counts the pages by how they were read, and each page's front matter says how it was read.
 
 Where a quiz screenshot cuts a line off at the bottom of the page, the line is completed only when its visible
 part and the line before it settle it; words cut off at the right edge are kept as far as they are visible.
@@ -44,6 +44,37 @@ What the sample found that no repeated cause explains: on 3 of the 12 pages from
 third-read pages, none. Those three pages were then proofread. So a page read only by the local models may hold a
 small error of that kind; about one in four did in this sample.
 
+## A second reader for dropped content
+
+After the first publication, every page read only by the local models and not proofread (312), with the sample's 12
+third-read pages as a control, was compared with its page image by a second reader built on OpenCV 5.0.0. It runs four
+checks:
+- text lines outside every block the reader marked, or a block holding more text than the transcription gives it;
+- drawings with no figure;
+- integral signs and radicals counted against the text;
+- the words of each line, read by OpenCV's DNN text recognizer (CRNN, from opencv_zoo), that do not occur in the text in
+  order.
+
+Before it was trusted, it was shown to stay quiet on three pages proved exact, and to catch drops planted in copies of
+five pages. It also caught one of the sample's three real drops; the other two (one letter, and a mark smaller than a
+letter) are below its reach.
+
+It flagged 13 of the 312 pages, and 4 held up against the page image; none of the controls' 5 flags did. The 4 were
+corrected:
+- a column header and a check mark (quiz answers page 107);
+- a drawing with no figure (book page 271);
+- two figure crops that had cut off part of their drawing (problems page 43, book page 186).
+
+That last kind led to a sweep of every figure crop. For each crop, it looks for page ink connected to the drawing that
+falls outside the crop's box, and for marks near the box that are in no block of text. Before it was trusted, it was
+shown to catch three crops deliberately cut too tight and to stay quiet on the crops of the exact pages.
+
+Of 568 crops it flagged 26, and 6 held up, the two above among them: problems page 43, and book pages 125 (two crops),
+126, 186 and 201. Those were re-cut to take in the whole drawing. The other 20 were:
+- text the transcription carries (7);
+- Blackboard's interface (7);
+- a dashed axis line running on past the crop with nothing on it (6), left as they are.
+
 ## The problems' render
 
 The problems exist only as a 2008 Word file (`SACProblemsIIa14.doc`; the site's PDF link serves a "File Not Found"
@@ -61,7 +92,10 @@ Figures are cropped from the page images at the boxes MinerU2.5-Pro marked. The 
 Blackboard, so not every box is a figure: Blackboard's icons (278 small crops: answer marks and book icons), its
 buttons and empty dropdowns are not reproduced; crops that were text (answer options, small formulas) are
 transcribed as text instead; and one image whose origin could not be settled (a rendered prism, quiz answers page
-104) is left out. The checks and crosses beside "Selected Answer" and "Correct Answer" are kept as text.
+104) is left out. The checks and crosses beside "Selected Answer" and "Correct Answer" are kept as text. Seven
+figures were cut by hand: the six re-cut after the sweep above, and the drawing on book page 271, for which the reader
+drew no box. On book page 186 the antenna runs down beside two paragraphs, so its crop takes in their lines. The
+transcription carries those paragraphs, so in the crop they are painted white and only the drawing is left.
 
 ## Not kept
 

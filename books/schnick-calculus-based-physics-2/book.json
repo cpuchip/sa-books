@@ -71,9 +71,9 @@
    }
   },
   "pages_by_reading": {
-   "local": 312,
+   "local": 310,
    "haiku": 197,
-   "proofread": 124
+   "proofread": 126
   },
   "method": "Every page read by two local OCR models (MinerU2.5-Pro-2605-1.2B, Apache-2.0; GLM-OCR, MIT); pages where they disagreed on any formula read a third time by a Claude model with both readings and the page image; pages with handwriting, figure labels in the text, or glyphs fixed in the problems' render proofread against the page image. See evidence/."
  }
