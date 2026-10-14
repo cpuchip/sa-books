@@ -1,0 +1,80 @@
+{
+ "id": "schnick-calculus-based-physics-2",
+ "title": "Calculus-Based Physics II",
+ "title_as_modified": "Calculus-Based Physics by Jeffrey Schnick as modified by Michael Stufflebeam",
+ "author": "Jeffrey W. Schnick",
+ "affiliation": "Saint Anselm College",
+ "year": 2006,
+ "licence": {
+  "name": "CC BY-SA 2.5",
+  "url": "https://creativecommons.org/licenses/by-sa/2.5/",
+  "statement": "Copyright 2006, Jeffrey W. Schnick, Creative Commons Attribution Share-Alike License 2.5.",
+  "statement_source": "the book's title page (cbPhysicsIIb24.pdf, page 1)",
+  "ancillary": "cbphysics.org's home page: \"You are encouraged to copy, edit, use, and share the book itself and the ancillary materials posted to this web site in accord with the Creative Commons Attribution-ShareAlike 2.5 License.\" The quizzes and the problems are posted on its 2nd Semester Downloads page under the same notice.",
+  "checked": "2026-10-14"
+ },
+ "attribution": {
+  "manner": "http://www.cbphysics.org/howtoAttribute.html",
+  "title_as_modified": "Calculus-Based Physics by Jeffrey Schnick as modified by Michael Stufflebeam",
+  "credit": "Transcription of Calculus-Based Physics II, its online quizzes and its SAC problems, by Jeffrey W. Schnick (http://www.cbphysics.org/). Licensed under CC BY-SA 2.5 (https://creativecommons.org/licenses/by-sa/2.5/)."
+ },
+ "sources": [
+  {
+   "file": "cbPhysicsIIb24.pdf",
+   "url": "http://www.cbphysics.org/downloadsII/cbPhysicsIIb24.pdf",
+   "sha256": "25d52706f70dfc57870b3cbd35f194bd804874e3e5171a03b96a08aa8fdec321"
+  },
+  {
+   "file": "OnLineQuizQuestionsIIa1.pdf",
+   "url": "http://www.cbphysics.org/downloadsII/OnLineQuizQuestionsIIa1.pdf",
+   "sha256": "7e283baea4748f943e78d3b0ea96bec34504e8a74d35a0d7514b271113017ecf"
+  },
+  {
+   "file": "OnLineQuizAnswersIIa1.pdf",
+   "url": "http://www.cbphysics.org/downloadsII/OnLineQuizAnswersIIa1.pdf",
+   "sha256": "b7cb766ae4ff122dfb908a8b846238685d24862c7bae0f411d67c3c2a57516ef"
+  },
+  {
+   "file": "SACProblemsIIa14.doc.zip",
+   "url": "http://www.cbphysics.org/downloadsII/SACProblemsIIa14.doc.zip",
+   "sha256": "717b899101e65d9755b0e9920dba5adebeb612e281b003d9720d52716a1b4cb6"
+  }
+ ],
+ "not_kept": [
+  {
+   "file": "sacProblemsIIa14.pdf",
+   "url": "http://www.cbphysics.org/downloadsII/sacProblemsIIa14.pdf",
+   "why": "the link serves a saved \"File Not Found\" page, not the problems"
+  }
+ ],
+ "transcription": {
+  "documents": {
+   "cbPhysicsIIb24": {
+    "title": "Calculus-Based Physics II (the book)",
+    "source": "cbPhysicsIIb24.pdf",
+    "pages": 332
+   },
+   "OnLineQuizQuestionsIIa1": {
+    "title": "On-line quiz questions, second semester",
+    "source": "OnLineQuizQuestionsIIa1.pdf",
+    "pages": 97
+   },
+   "OnLineQuizAnswersIIa1": {
+    "title": "On-line quiz answers, second semester (with handwritten worked solutions)",
+    "source": "OnLineQuizAnswersIIa1.pdf",
+    "pages": 153
+   },
+   "SACProblemsIIa14": {
+    "title": "SAC problems, second semester",
+    "source": "SACProblemsIIa14.doc (in SACProblemsIIa14.doc.zip)",
+    "pages": 51
+   }
+  },
+  "pages_by_reading": {
+   "local": 312,
+   "haiku": 197,
+   "proofread": 124
+  },
+  "method": "Every page read by two local OCR models (MinerU2.5-Pro-2605-1.2B, Apache-2.0; GLM-OCR, MIT); pages where they disagreed on any formula read a third time by a Claude model with both readings and the page image; pages with handwriting, figure labels in the text, or glyphs fixed in the problems' render proofread against the page image. See evidence/."
+ }
+}

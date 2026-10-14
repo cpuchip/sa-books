@@ -11,9 +11,8 @@ The layout follows pd-books:
     books/<slug>/book.json     title, author, edition, licence, source files and URLs
     books/<slug>/found.json    errata we found ourselves, and candidates, each with its evidence
     books/<slug>/evidence/     what settled an entry
+    books/<slug>/transcription/  a transcription, one Markdown file per page, with its figures
     export/                    the books as data for books.cpuchip.net and learn.cpuchip.net
-
-No book is here yet.
 
 ## The books
 
